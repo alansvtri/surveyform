@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <h1 id="title">Hobbies de Cuarentena</h1>
+    <p id="description"><i>Gracias por tomarte el tiempo de responder para saber qué hacemos en estos tiempos de aislamiento</i></p>
+    <div id="form">
+      <form id="survey-form">
+        <label id="name-label" for="name">Nombre</label><br>
+        <input id="name" type="text" name="name" required placeholder="Escribe tu nombre"><br><br>
+        <label id="email-label" for="email">Correo Electrónico</label><br>
+        <input id="email" type="email" name="email" required placeholder="Escribe tu e-mail"><br><br>
+        <label id="number-label" for="age">Edad</label><br>
+        <input id="number" type="number" name="age" required placeholder="Edad" min="18" max="99"><br><br>
+        <label for="ocupation">Condición Laboral</label><br>
+        <select id="dropdown" name="ocupation">
+          <option value="reldep">Empleado en relación de dependencia</option>
+          <option value="indep">Trabajador independiente</option>
+          <option value="desocup">Desocupado</option>
+          <option value="estud">Estudiante</option>
+        </select><br><br>
+        <p>¿Tu actividad laboral se vio afectada por la cuarentena?</p>
+        <input type="radio" name="effect" value="si" id="si">
+        <label for="si">Sí</label><br>
+        <input type="radio" name="effect" value="no" id="no">
+        <label for="no">No</label><br><br>
+        <p>¿Usas alguno de los siguientes servicios de streaming?</p>
+        <input type="checkbox" name="streaming" value="netflix" id="netflix">
+        <label for="netflix">Netflix</label><br>
+        <input type="checkbox" name="streaming" value="prime" id="prime">
+        <label for="prime">Amazon Prime Video</label><br>
+        <input type="checkbox" name="streaming" value="hbo" id="hbo">
+        <label for="hbo">HBO Go</label><br>
+        <input type="checkbox" name="streaming" value="fox" id="fox">
+        <label for="fox">Fox Premium</label><br>
+        <input type="checkbox" name="streaming" value="flow" id="flow">
+        <label for="flow">Cablevisión Flow</label><br>
+        <input type="checkbox" name="streaming" value="other" id="other">
+        <label for="other">Otro</label><br><br>
+        <p>¿Tu consumo de esos servicios de streaming aumentaron por la cuarentena?</p>
+        <input type="radio" name="incrstr" value="yes" id="yes">
+        <label for="yes">Sí</label>
+        <input type="radio" name="incrstr" value="no" id="no">
+        <label for="no">No</label><br><br>
+        <p>¿Empezaste a hacer alguna actividad que querías hacer antes de la cuarentena pero no tenías tiempo para hacerlo?</p>
+        <textarea rows="10" required form="survey-form"></textarea><br><br>
+        <button type="submit" id="submit">Enviar</button>
+    </div>
+  </main>
+</body>
